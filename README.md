@@ -1,12 +1,17 @@
-# React App
-App that is going to work as a base for other React apps
+![[quepeli.es](https://ajorquera.github.com/quepeli.es)](./public/quepeli.png "quepeli.es")
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Repo that contains the main application for [quepeli.es](https://quepeli.es). 
 
-## Available Scripts
+Run app
 
-In the project directory, you can run:
+```bash
+yarn start
+```
 
-* `npm start`
-* `npm test`
-* `npm run build`
+Run tests
+
+```bash
+yarn test
+```
+
+Aplication will be deploy on commit to `master` branch.

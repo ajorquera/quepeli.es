@@ -1,0 +1,34 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - master
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set the node version
+        uses: actions/setup-node@v3
+        with:
+          cache: 'yarn'
+          cache-dependency-path: yarn.lock
+
+      - name: Install 🔧
+        run: yarn
+
+      - name: Test and Build 🏗️
+        run: |
+          yarn test
+          yarn build
+
+      - name: Deploy Storybook 📚
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist
+          clean: false
+          force: false
