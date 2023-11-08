@@ -23,12 +23,12 @@ jobs:
 
       - name: Test and Build 🏗️
         run: |
-          yarn test
+          yarn test:ci
           yarn build
 
-      - name: Deploy Storybook 📚
+      - name: Deploy App 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist
+          folder: build
           clean: false
           force: false
