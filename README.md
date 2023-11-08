@@ -1,6 +1,6 @@
-![[quepeli.es](https://ajorquera.github.com/quepeli.es)](./public/quepeli.png "quepeli.es")
+![[quepeli.es](https://quepeli.es)](./public/quepeli.png "quepeli.es")
 
-Repo that contains the main application for [quepeli.es](https://quepeli.es). 
+Repo that contains the main application for [quepeli.es](https://ajorquera.github.io/quepeli.es). 
 
 Run app
 
